@@ -1,0 +1,50 @@
+<odoo>
+    <data>
+
+        <record id="view_school_wizard" model="ir.ui.view">
+            <field name="name">school wizard form</field>
+            <field name="model">school.wizard</field>
+            <field name="arch" type="xml">
+                <form string="School Wizard">
+                    <group>
+                        <field name="subject_id"/>
+                        <field name="grade"/>
+                        <field name="student_id"/>
+                    </group>
+                    <footer>
+                        <button string="Confirm" type="object" name="action_confirm" class="btn-primary"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        # Add wizard model
+        <record id="action_school_wizard" model="ir.actions.act_window">
+            <field name="name">School Wizard</field>
+            <field name="res_model">school.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_school_wizard"/>
+            <field name="target">new</field>
+        </record>
+
+        # Add action to open wizard
+        <record id="action_open_school_student_wizard" model="ir.actions.server">
+            <field name="name">Open School Student Wizard</field>
+            <field name="model_id" ref="model_school_student"/>
+            <field name="binding_model_id" ref="model_school_student"/>
+            <field name="state">code</field>
+            <field name="code">
+                action = {
+                'type': 'ir.actions.act_window',
+                'name': 'School Student Wizard',
+                'res_model': 'school.wizard',
+                'view_mode': 'form',
+                'target': 'new',
+                }
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

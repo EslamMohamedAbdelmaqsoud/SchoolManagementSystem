@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        # Create Category for School Module
+        <record id="school_category" model="ir.module.category">
+            <field name="name">School</field>
+        </record>
+
+        # Create a new group for school manager
+        <record id="school_manager_group" model="res.groups">
+            <field name="name">School Manager</field>
+            <field name="category_id" ref="school.school_category"/>
+        </record>
+
+        # Create a new group for school user
+        <record id="school_user_group" model="res.groups">
+            <field name="name">School User</field>
+            <field name="category_id" ref="school.school_category"/>
+        </record>
+
+        # Create Record Rule by user for School
+        <record id="school_record_rule_by_user" model="ir.rule">
+            <field name="name">record rule by user</field>
+            <field name="model_id" ref="school.model_school_student"/>
+            <field name="domain_force">[('create_uid','=',user.id)]</field>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_unlink" eval="True"/>
+        </record>
+
+
+    </data>
+</odoo>

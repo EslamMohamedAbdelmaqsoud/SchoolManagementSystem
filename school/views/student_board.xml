@@ -1,0 +1,38 @@
+<!-- File: student_board.xml -->
+<odoo>
+    <data>
+<!--        &lt;!&ndash; Define the dashboard form view &ndash;&gt;-->
+<!--        <record id="student_dashboard_form" model="ir.ui.view">-->
+<!--            <field name="name">student.dashboard.form</field>-->
+<!--            <field name="model">board.board</field>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <form string="Student Dashboard">-->
+<!--                    <board style="1">-->
+<!--                        <column>-->
+<!--                            <action name="action_student"-->
+<!--                                    string="Student"-->
+<!--                                    res_model="school.student"-->
+<!--                                    view_mode="tree,form"/>-->
+<!--                        </column>-->
+<!--                    </board>-->
+
+<!--                </form>-->
+<!--            </field>-->
+<!--        </record>-->
+
+<!--        &lt;!&ndash; Define the menu item for the dashboard &ndash;&gt;-->
+<!--        <menuitem id="menu_student_dashboard" name="Student Dashboard"-->
+<!--                  parent="base.menu_reporting_dashboard"-->
+<!--                  action="student_dashboard_action"-->
+<!--                  sequence="1"/>-->
+
+<!--        &lt;!&ndash; Define the dashboard action &ndash;&gt;-->
+<!--        <record id="student_dashboard_action" model="ir.actions.act_window">-->
+<!--            <field name="name">Student Dashboard</field>-->
+<!--            <field name="res_model">board.board</field>-->
+<!--            <field name="view_mode">form</field>-->
+<!--            <field name="usage">menu</field>-->
+<!--            <field name="view_id" ref="student_dashboard_form"/>-->
+<!--        </record>-->
+    </data>
+</odoo>

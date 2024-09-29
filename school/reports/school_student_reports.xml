@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+
+        <report
+                id="school_student_report"
+                string="Students Report"
+                name="school.school_student_template"
+                model="school.student"
+                report_type="qweb-pdf"/>
+
+    </data>
+</odoo>

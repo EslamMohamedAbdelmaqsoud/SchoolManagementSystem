@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+        <!-- Tree View -->
+        <record id="subject_tree_view" model="ir.ui.view">
+            <field name="name">Subject Tree View</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="year_id"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="subject_form_view" model="ir.ui.view">
+            <field name="name">Subject Form View</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="year_id"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Create Action -->
+        <record id="subject_action" model="ir.actions.act_window">
+            <field name="name">Subjects</field>
+            <field name="res_model">school.subject</field>
+        </record>
+
+        <!-- Create MenuItem -->
+        <menuitem id="school_subject_menu" name="Subjects" parent="school_root" action="subject_action"/>
+
+    </data>
+</odoo>

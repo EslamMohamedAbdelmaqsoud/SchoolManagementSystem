@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+
+        ############# Tree View ##############
+        <record id="years_tree_view" model="ir.ui.view">
+            <field name="name">Years Tree View</field>
+            <field name="model">school.management.system</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="year"/>
+                    <field name="number_of_classes"/>
+                </tree>
+            </field>
+        </record>
+
+        ########### form view #################
+        <record id="years_form_view" model="ir.ui.view">
+            <field name="name">Years Form View</field>
+            <field name="model">school.management.system</field>
+            <field name="arch" type="xml">
+
+                <form>
+                    <!--تاجة بتخلي الفورم زي الورقة شكلها حلو-->
+                    <sheet>
+                        <!-- تاجة جديدة بتعرض اسماء Fields وعنوان وبتقسم لمجموعات -->
+                        <group>
+                            <field name="year"/>
+                            <field name="number_of_classes"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+
+        </record>
+
+
+        # Create Action
+        <record id="year_action" model="ir.actions.act_window">
+
+            <field name="name">Years</field>
+            <field name="res_model">school.management.system</field>
+
+        </record>
+
+        ###########################
+
+        # Create MenuItem
+        <menuitem id="school_root" name="School"/>
+        <menuitem id="school_year_menu" name="Years" parent="school_root" action="year_action"/>
+
+    </data>
+</odoo>

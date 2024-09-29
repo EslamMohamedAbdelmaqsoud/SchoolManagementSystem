@@ -1,0 +1,42 @@
+<odoo>
+    <data>
+        <!-- Tree View -->
+        <record id="class_tree_view" model="ir.ui.view">
+            <field name="name">Class Tree View</field>
+            <field name="model">school.class</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="year_id"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="class_form_view" model="ir.ui.view">
+            <field name="name">Class Form View</field>
+            <field name="model">school.class</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="year_id"/>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Create Action -->
+        <record id="class_action" model="ir.actions.act_window">
+            <field name="name">Classes</field>
+            <field name="res_model">school.class</field>
+        </record>
+
+        <!-- Create MenuItem -->
+        <menuitem id="school_class_menu" name="Classes" parent="school_root" action="class_action"/>
+    </data>
+</odoo>

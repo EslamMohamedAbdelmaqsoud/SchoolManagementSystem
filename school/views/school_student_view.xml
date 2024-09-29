@@ -1,0 +1,155 @@
+<odoo>
+    <data>
+        <!-- Tree View -->
+        <record id="student_tree_view" model="ir.ui.view">
+            <field name="name">Student Tree View</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="birth_date"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+                    <field name="student_id"/>
+
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- Form View -->
+        <record id="student_form_view" model="ir.ui.view">
+            <field name="name">Student Form View</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <header>
+                            <button name="%(action_school_wizard)d" string="Open Wizard" type="action"
+                                    class="btn-primary"/>
+                            <button name="get_school_students" string="Test Call Get School Students " type="object"
+                                    class="btn-primary"/>
+                        </header>
+                        <group>
+                            <group string="student info">
+                                <field name="name"/>
+                                <field name="birth_date"/>
+                                <field name="age"/>
+                                <field name="gender"/>
+                                <field name="image" widget="image"/>
+                            </group>
+
+                            <group string="student info">
+                                <field name="class_id"/>
+                                <field name="year_id"/>
+                                <field name="subject_ids"/>
+                                <field name="student_id"/>
+                                <field name="lecture"/>
+                            </group>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Search View -->
+        <record id="student_search_view" model="ir.ui.view">
+            <field name="name">Student Search View</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <search string="Students">
+                    <field name="name"/>
+                    <field name="birth_date"/>
+                    <field name="age"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Kanban View -->
+        <record id="student_kanban_view" model="ir.ui.view">
+            <field name="name">Student Kanban View</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <kanban class="o_kanban_mobile">
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <strong>
+                                            <field name="name"/>
+                                            <field name="image" widget="image"/>
+                                        </strong>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <span class="badge badge-pill">
+                                            <t t-esc="record.age.raw_value"/>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <t t-esc="record.gender.raw_value"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <!-- Calendar View -->
+        <record id="student_calendar_view" model="ir.ui.view">
+            <field name="name">Student Calendar View</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <calendar string="Students" date_start="birth_date" date_stop="birth_date">
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+                </calendar>
+            </field>
+        </record>
+
+        <!-- Graph View -->
+        <record id="student_graph_view" model="ir.ui.view">
+            <field name="name">Student Graph View</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <graph string="Students">
+                    <field name="name"/>
+                    <field name="age"/>
+                </graph>
+            </field>
+        </record>
+
+
+        <!-- Pivot View -->
+        <record id="student_pivot_view" model="ir.ui.view">
+            <field name="name">Student Pivot View</field>
+            <field name="model">school.student</field>
+            <field name="arch" type="xml">
+                <pivot>
+                    <field name="name" type="row"/>
+                    <field name="age" type="measure"/>
+                </pivot>
+            </field>
+        </record>
+
+        <!-- Create Action -->
+        <record id="student_action" model="ir.actions.act_window">
+            <field name="name">Students</field>
+            <field name="res_model">school.student</field>
+            <field name="view_mode">tree,form,kanban,graph,calendar,pivot</field>
+        </record>
+
+
+        <!-- Create MenuItem -->
+        <menuitem id="school_student_menu" name="Students" parent="school_root" action="student_action"/>
+
+    </data>
+</odoo>

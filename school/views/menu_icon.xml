@@ -1,0 +1,16 @@
+<odoo>
+
+    <menuitem
+            id="menu_school_root"
+            name="School"
+            sequence="10"
+            web_icon="minia/school,static/description/icon.png"/>
+
+    <menuitem
+            id="menu_student"
+            name="Students"
+            parent="menu_school_root"/>
+
+
+
+</odoo>

@@ -1,0 +1,254 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* school
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-07 18:26+0000\n"
+"PO-Revision-Date: 2024-09-07 18:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__age
+msgid "Age"
+msgstr "العمر"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__birth_date
+msgid "Birth Date"
+msgstr "تاريخ الميلاد"
+
+#. module: school
+#: model_terms:ir.ui.view,arch_db:school.view_school_wizard
+msgid "Cancel"
+msgstr "اغلاق"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__class_id
+msgid "Class"
+msgstr "الصف"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.class_action
+#: model:ir.ui.menu,name:school.school_class_menu
+msgid "Classes"
+msgstr "الصفوف"
+
+#. module: school
+#: model_terms:ir.ui.view,arch_db:school.view_school_wizard
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class__create_uid
+#: model:ir.model.fields,field_description:school.field_school_management_system__create_uid
+#: model:ir.model.fields,field_description:school.field_school_student__create_uid
+#: model:ir.model.fields,field_description:school.field_school_subject__create_uid
+#: model:ir.model.fields,field_description:school.field_school_wizard__create_uid
+msgid "Created by"
+msgstr " انشأ بواسطة"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class__create_date
+#: model:ir.model.fields,field_description:school.field_school_management_system__create_date
+#: model:ir.model.fields,field_description:school.field_school_student__create_date
+#: model:ir.model.fields,field_description:school.field_school_subject__create_date
+#: model:ir.model.fields,field_description:school.field_school_wizard__create_date
+msgid "Created on"
+msgstr " انشأ في"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class__display_name
+#: model:ir.model.fields,field_description:school.field_school_management_system__display_name
+#: model:ir.model.fields,field_description:school.field_school_student__display_name
+#: model:ir.model.fields,field_description:school.field_school_subject__display_name
+#: model:ir.model.fields,field_description:school.field_school_wizard__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: school
+#: model:ir.model.fields.selection,name:school.selection__school_student__gender__f
+msgid "Female"
+msgstr " انثى"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__gender
+msgid "Gender"
+msgstr " الجنس"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_wizard__grade
+msgid "Grade"
+msgstr " الدرجة"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class__id
+#: model:ir.model.fields,field_description:school.field_school_management_system__id
+#: model:ir.model.fields,field_description:school.field_school_student__id
+#: model:ir.model.fields,field_description:school.field_school_subject__id
+#: model:ir.model.fields,field_description:school.field_school_wizard__id
+msgid "ID"
+msgstr " الرقم"
+
+#. module: school
+#: model:ir.model.constraint,message:school.constraint_school_student_unique_student_id
+msgid "ID already exists"
+msgstr " الرقم موجود بالفعل"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__image
+msgid "Image"
+msgstr " الصورة"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class____last_update
+#: model:ir.model.fields,field_description:school.field_school_management_system____last_update
+#: model:ir.model.fields,field_description:school.field_school_student____last_update
+#: model:ir.model.fields,field_description:school.field_school_subject____last_update
+#: model:ir.model.fields,field_description:school.field_school_wizard____last_update
+msgid "Last Modified on"
+msgstr " اخر تعديل في"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class__write_uid
+#: model:ir.model.fields,field_description:school.field_school_management_system__write_uid
+#: model:ir.model.fields,field_description:school.field_school_student__write_uid
+#: model:ir.model.fields,field_description:school.field_school_subject__write_uid
+#: model:ir.model.fields,field_description:school.field_school_wizard__write_uid
+msgid "Last Updated by"
+msgstr " اخر تعديل بواسطة"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class__write_date
+#: model:ir.model.fields,field_description:school.field_school_management_system__write_date
+#: model:ir.model.fields,field_description:school.field_school_student__write_date
+#: model:ir.model.fields,field_description:school.field_school_subject__write_date
+#: model:ir.model.fields,field_description:school.field_school_wizard__write_date
+msgid "Last Updated on"
+msgstr " اخر تعديل في"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__lecture
+msgid "Lecture"
+msgstr " المحاضرة"
+
+#. module: school
+#: model:ir.model.fields.selection,name:school.selection__school_student__gender__m
+msgid "Male"
+msgstr " ذكر"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class__name
+#: model:ir.model.fields,field_description:school.field_school_student__name
+#: model:ir.model.fields,field_description:school.field_school_subject__name
+msgid "Name"
+msgstr " الاسم"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_management_system__number_of_classes
+msgid "Number of Classes"
+msgstr " عدد الصفوف"
+
+#. module: school
+#: model:ir.actions.server,name:school.action_open_school_student_wizard
+msgid "Open School Student Wizard"
+msgstr " فتح معالج الطالب المدرسي"
+
+#. module: school
+#: model_terms:ir.ui.view,arch_db:school.student_form_view
+msgid "Open Wizard"
+msgstr " فتح المعالج"
+
+#. module: school
+#: model:ir.ui.menu,name:school.school_root
+msgid "School"
+msgstr " المدرسة"
+
+#. module: school
+#: model:res.groups,name:school.group_school_data
+msgid "School Data"
+msgstr " بيانات المدرسة"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_school_wizard
+#: model:ir.model,name:school.model_school_wizard
+#: model_terms:ir.ui.view,arch_db:school.view_school_wizard
+msgid "School Wizard"
+msgstr " معالج المدرسة"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_wizard__student_id
+msgid "Student"
+msgstr " الطالب"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__student_id
+msgid "Student ID"
+msgstr " رقم الطالب"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.student_action
+#: model:ir.ui.menu,name:school.school_student_menu
+#: model_terms:ir.ui.view,arch_db:school.student_calendar_view
+#: model_terms:ir.ui.view,arch_db:school.student_graph_view
+#: model_terms:ir.ui.view,arch_db:school.student_search_view
+msgid "Students"
+msgstr " الطلاب"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_wizard__subject_id
+msgid "Subject"
+msgstr " المادة"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.subject_action
+#: model:ir.model.fields,field_description:school.field_school_student__subject_ids
+#: model:ir.ui.menu,name:school.school_subject_menu
+msgid "Subjects"
+msgstr " المواد"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_class__year_id
+#: model:ir.model.fields,field_description:school.field_school_management_system__year
+#: model:ir.model.fields,field_description:school.field_school_student__year_id
+#: model:ir.model.fields,field_description:school.field_school_subject__year_id
+msgid "Year"
+msgstr " السنة"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.year_action
+#: model:ir.ui.menu,name:school.school_year_menu
+msgid "Years"
+msgstr " السنوات"
+
+#. module: school
+#: model:ir.model,name:school.model_school_class
+msgid "school.class"
+msgstr " صف المدرسة"
+
+#. module: school
+#: model:ir.model,name:school.model_school_management_system
+msgid "school.management.system"
+msgstr " نظام الادارة المدرسية"
+
+#. module: school
+#: model:ir.model,name:school.model_school_student
+msgid "school.student"
+msgstr " طالب المدرسة"
+
+#. module: school
+#: model:ir.model,name:school.model_school_subject
+msgid "school.subject"
+msgstr " مادة المدرسة"
+
+#. module: school
+#: model_terms:ir.ui.view,arch_db:school.student_form_view
+msgid "student info"
+msgstr " معلومات الطالب"

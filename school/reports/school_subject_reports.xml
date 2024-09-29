@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+
+        <report
+                id="school_subject_report"
+                string="Subjects Report"
+                name="school.school_subject_template"
+                model="school.subject"
+                report_type="qweb-html"/>
+
+    </data>
+</odoo>
