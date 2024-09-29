@@ -17,8 +17,7 @@
 
 ## :dart: About ##
 
-A school management system (SMS) is a tool that helps schools organize and manage information. It's like a digital filing cabinet and organizer for everything related to students, classes, subjects, and years.
-
+School Management System (SMS) is an Odoo project that helps schools organize and manage information. It is like a digital filing cabinet and organizer for everything related to students, classes, subjects, and years, and it is a system that suits all the needs of school institutions using Python, Restful APIs, and PostgreSQL.
 
 ## :rocket: Technologies ##
 
